@@ -1,0 +1,34 @@
+# --- API server ---
+fastapi>=0.112.0
+uvicorn[standard]>=0.30.0
+python-multipart
+pydantic>=2.8.0
+python-dotenv
+requests
+aiosqlite
+
+# --- LangGraph + checkpointing ---
+langgraph
+langgraph-checkpoint-sqlite
+langgraph-checkpoint-postgres
+psycopg[binary,pool]
+
+# --- LangChain + tools ---
+langchain-core
+langchain-groq
+langchain-community
+langchain-mcp-adapters
+langchain-text-splitters
+ddgs
+
+# --- RAG / retrieval ---
+qdrant-client>=1.11.0
+sentence-transformers>=3.0.0
+fastembed>=0.3.6
+pymupdf4llm
+
+# --- Voice ---
+edge-tts
+
+# --- Observability (optional; remove if you skip LangSmith) ---
+langsmith
